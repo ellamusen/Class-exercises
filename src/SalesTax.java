@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise_SalesTax {
+public class SalesTax {
 
     public static void main(String[] args) {
         // 3. Made plusMoms its own method
