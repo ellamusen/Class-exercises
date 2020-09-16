@@ -5,7 +5,8 @@ public class Exercise_SalesTax {
     public static void main(String[] args) {
         // 3. Made plusMoms its own method
         salesTax();
-        plusMoms();
+        //5. Renamed plusMoms to plusDanskMoms
+        plusDanskMoms();
         plusTyskMoms();
 
     }
@@ -26,7 +27,7 @@ public class Exercise_SalesTax {
     }
 
     // 2. Translated class, variables and tax amount to danish
-    public static void plusMoms() {
+    public static void plusDanskMoms() {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Indsæt et beløb: ");
