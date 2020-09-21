@@ -5,12 +5,17 @@ import java.util.Scanner;
 public class ChineseZodiac {
 
     public static void main(String[] args) {
+
+        // Create scanner
         Scanner input = new Scanner(System.in);
 
+        // Prompt user to enter a year
         System.out.print("Enter a year: ");
         int year = input.nextInt();
 
-        switch (year % 12) {
+        // Modulus (%) divides left-hand operand by right-hand operand and returns remainder.
+        // https://www.mathsisfun.com/definitions/modulo-operation.html
+        switch (year % 12) { // Switch provides an easy way to dispatch execution to different parts of code based on the value of the expression
             case 0: System.out.println("monkey"); break;
             case 1: System.out.println("rooster"); break;
             case 2: System.out.println("dog"); break;
@@ -25,5 +30,4 @@ public class ChineseZodiac {
             case 11: System.out.println("sheep"); break;
         }
     }
-
 }
