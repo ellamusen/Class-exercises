@@ -15,16 +15,17 @@ public class ComputeAndIntepretBMI {
         System.out.print("Enter height in inches: ");
         double height = input.nextDouble();
 
+        // Converting measurement units
         final double KILOGRAMS_PER_POUND = 0.45359237; // Constant
         final double METERS_PER_INCH = 0.0254; // Constant
 
-        // Compute BMI
+        // Compute BMI using these equations
         double weightInKilograms = weight * KILOGRAMS_PER_POUND;
         double heightInMeters = height * METERS_PER_INCH;
         double bmi = weightInKilograms /
                 (heightInMeters * heightInMeters);
 
-        // Display result
+        // Display result using if, else if and else statements
         System.out.println("BMI is " + bmi);
         if (bmi < 18.5)
             System.out.println("Underweight");
