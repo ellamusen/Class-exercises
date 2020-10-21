@@ -33,27 +33,16 @@ public class Car {
         }
     }
 
-    public void changeToGear(int g) {
-        if (g == 0) {
-            System.out.println("Gearshift is in reverse gear");
-        }
-        else if (g == 1) {
-            System.out.println("Gearshift is in first gear");
-        }
-        else if (g == 2) {
-            System.out.println("Gearshift is in second gear");
-        }
-        else if (g == 3) {
-            System.out.println("Gearshift is in third gear");
-        }
-        else if (g == 4) {
-            System.out.println("Gearshift is in forth gear");
-        }
-        else if (g == 5) {
-            System.out.println("Gearshift is in fifth gear");
-        }
-        else if (g == 6) {
-            System.out.println("Gearshift is in neutral");
+    public void changeToGear(GearShift gear) {
+        switch (gear) {
+            case FIRST -> System.out.println("Gearshift is in first gear");
+            case SECOND -> System.out.println("Gearshift is in second gear");
+            case THIRD -> System.out.println("Gearshift is in third gear");
+            case FORTH -> System.out.println("Gearshift is in forth gear");
+            case FIFTH -> System.out.println("Gearshift is in fifth gear");
+            case SIXTH -> System.out.println("Gearshift is in sixth gear");
+            case REVERSE -> System.out.println("Gearshift is in reverse");
+            case NEUTRAL -> System.out.println("Gearshift is in neutral");
         }
     }
 
