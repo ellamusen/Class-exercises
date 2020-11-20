@@ -32,26 +32,41 @@ public class Main {
         st5.by = "Næstved";
 
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Hvem vil du slå op?: ");
-        String navnDerSkalSlaasOp = input.next();
-        switch(navnDerSkalSlaasOp) {
-            case "A":
-                System.out.println(st1.alder);
+        // Kalder constructer 1
+        Students st6 = new Students();
+        st6.navn = "A";
+        st6.alder = 22;
+        st6.by = "Næstved";
+
+        // Kalder constructor 2
+        // FIX VARIABEL //Students st7 = new Students ("B", 22, "Næstved");
+
+        // Kalder constructor 3
+        // FIX VARIABEL //Students st8 = new Students("C", 22);
+
+
+        while (true) {
+            Scanner input = new Scanner(System.in);
+            System.out.print("Hvem vil du slå op?: ");
+            String navnDerSkalSlaasOp = input.next();
+            switch (navnDerSkalSlaasOp) {
+                case "A":
+                    System.out.println(st1.alder);
                     break;
-            case "B":
-                System.out.println(st2.alder);
+                case "B":
+                    System.out.println(st2.alder);
                     break;
-            case "C":
-                System.out.println(st3.alder);
+                case "C":
+                    System.out.println(st3.alder);
                     break;
-            case "D":
-                System.out.println(st4.alder);
-                break;
-            case "E":
-                System.out.println(st5.alder);
+                case "D":
+                    System.out.println(st4.alder);
+                    break;
+                case "E":
+                    System.out.println(st5.alder);
                 default:
                     System.out.println("Kan ikke finde denne studerende");
+            }
         }
     }
 }

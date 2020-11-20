@@ -9,5 +9,4 @@ public enum GearShift {
     SIXTH,
     REVERSE,
     NEUTRAL
-
 }
